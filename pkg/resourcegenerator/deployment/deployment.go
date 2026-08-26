@@ -93,6 +93,15 @@ func Generate(r reconciliation.Reconciliation) error {
 			volume.DefaultDigdiratorMaskinportenMountPath,
 		)
 	}
+	if util.IsScalewayAuthEnabled(application.Spec.Scaleway) {
+		podVolumes, containerVolumeMounts = volume.AppendDigdiratorSecret(
+			&skiperatorContainer,
+			containerVolumeMounts,
+			podVolumes,
+			application.Spec.Scaleway.Auth.SecretName,
+			volume.DefaultScalewayMountPath,
+		)
+	}
 
 	skiperatorContainer.VolumeMounts = containerVolumeMounts
 

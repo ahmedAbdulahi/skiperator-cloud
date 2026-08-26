@@ -180,7 +180,9 @@ func IsCloudSqlProxyEnabled(gcp *podtypes.GCP) bool {
 func IsGCPAuthEnabled(gcp *podtypes.GCP) bool {
 	return gcp != nil && gcp.Auth != nil && gcp.Auth.ServiceAccount != ""
 }
-
+func IsScalewayAuthEnabled(scaleway *podtypes.Scaleway) bool {
+	return scaleway != nil && scaleway.Auth != nil && scaleway.Auth.SecretName != ""
+}
 func ValidateUri(uri string) error {
 	if parsedURL, err := url.ParseRequestURI(uri); err == nil && parsedURL.Scheme != "" && parsedURL.Host != "" {
 		return nil

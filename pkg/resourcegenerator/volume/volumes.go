@@ -15,6 +15,7 @@ var invalidDNS1123LabelChars = regexp.MustCompile(`[^a-z0-9-]+`)
 const (
 	DefaultDigdiratorMaskinportenMountPath = "/var/run/secrets/skip/maskinporten"
 	DefaultDigdiratorIDportenMountPath     = "/var/run/secrets/skip/idporten"
+	DefaultScalewayMountPath               = "/var/run/secrets/skip/scaleway"
 
 	tmpVolumeName = "tmp"
 
