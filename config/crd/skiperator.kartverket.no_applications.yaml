@@ -1920,13 +1920,17 @@ spec:
                 description: Scaleway is used to configure Scaleway cloud settings
                   for the application
                 properties:
-                  serviceAccount:
-                    description: |-
-                      Name of the service account in which you are trying to authenticate your pod with
-                      Generally takes the form of some-name@some-project-id.iam.gserviceaccount.com
-                    type: string
-                required:
-                - serviceAccount
+                  auth:
+                    description: Configuration for authenticating a Pod with Scaleway
+                    properties:
+                      secretName:
+                        description: |-
+                          Name of the Kubernetes Secret (in the application's namespace) containing the
+                          Scaleway API access key and secret key.
+                        type: string
+                    required:
+                    - secretName
+                    type: object
                 type: object
               startup:
                 description: |-

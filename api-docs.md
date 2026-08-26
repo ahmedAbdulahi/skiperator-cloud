@@ -3463,10 +3463,37 @@ Scaleway is used to configure Scaleway cloud settings for the application
     </thead>
     <tbody>
       <tr>
-        <td><b>serviceAccount</b></td>
+        <td><b><a href="#applicationspecscalewayauth">auth</a></b></td>
+        <td>object</td>
+        <td>
+          Configuration for authenticating a Pod with Scaleway<br/>
+        </td>
+        <td>false</td>
+      </tr>
+    </tbody>
+</table>
+<a id="applicationspecscalewayauth"></a>
+#### Application.spec.scaleway.auth
+
+<sup>[Parent](#applicationspecscaleway)</sup>
+
+Configuration for authenticating a Pod with Scaleway
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Required</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>secretName</b></td>
         <td>string</td>
         <td>
-          Name of the service account in which you are trying to authenticate your pod with<br/>Generally takes the form of some-name@some-project-id.iam.gserviceaccount.com<br/>
+          Name of the Kubernetes Secret (in the application&#39;s namespace) containing the<br/>Scaleway API access key and secret key.<br/>
         </td>
         <td>true</td>
       </tr>
