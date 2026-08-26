@@ -337,6 +337,14 @@ This allows product teams to avoid the need to set up networking on the cluster,
         <td>false</td>
       </tr>
       <tr>
+        <td><b><a href="#applicationspecscaleway">scaleway</a></b></td>
+        <td>object</td>
+        <td>
+          Scaleway is used to configure Scaleway cloud settings for the application<br/>
+        </td>
+        <td>false</td>
+      </tr>
+      <tr>
         <td><b><a href="#applicationspecstartup">startup</a></b></td>
         <td>object</td>
         <td>
@@ -3434,6 +3442,33 @@ resources of other apps on the cluster.
           Requests set the initial allocation that is done for the app and will<br/>thus be available to the app on startup. More is allocated on demand<br/>until the limit is reached.<br/><br/>Requests can be set on the CPU and memory.<br/>
         </td>
         <td>false</td>
+      </tr>
+    </tbody>
+</table>
+<a id="applicationspecscaleway"></a>
+#### Application.spec.scaleway
+
+<sup>[Parent](#applicationspec)</sup>
+
+Scaleway is used to configure Scaleway cloud settings for the application
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Required</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>serviceAccount</b></td>
+        <td>string</td>
+        <td>
+          Name of the service account in which you are trying to authenticate your pod with<br/>Generally takes the form of some-name@some-project-id.iam.gserviceaccount.com<br/>
+        </td>
+        <td>true</td>
       </tr>
     </tbody>
 </table>

@@ -8,6 +8,7 @@ import (
 
 	"github.com/go-logr/logr"
 	"github.com/kartverket/skiperator/api/common"
+	"github.com/kartverket/skiperator/api/common/podtypes"
 	"github.com/kartverket/skiperator/pkg/util"
 	corev1 "k8s.io/api/core/v1"
 	apiextensionsv1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
@@ -272,6 +273,8 @@ type ApplicationSpec struct {
 	//+kubebuilder:validation:Optional
 	GCP *GCP `json:"gcp,omitempty"`
 
+	// Scaleway is used to configure Scaleway cloud settings for the application
+	Scaleway *podtypes.Scaleway `json:"scaleway,omitempty"`
 	// Labels can be used if you want every resource created by your application to
 	// have the same labels, including your application. This could for example be useful for
 	// metrics, where a certain label and the corresponding resources liveliness can be combined.
