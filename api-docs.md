@@ -2249,7 +2249,7 @@ GCP is used to configure Google Cloud Platform specific settings for the applica
         <td><b><a href="#applicationspecgcpauth">auth</a></b></td>
         <td>object</td>
         <td>
-          Configuration for authenticating a Pod with Google Cloud Platform<br/>For authentication with GCP, to use services like Secret Manager and/or Pub/Sub we need<br/>to set the GCP Service Account Pods should identify as. To allow this, we need the IAM role iam.workloadIdentityUser set on a GCP<br/>service account and bind this to the Pod&#39;s Kubernetes SA.<br/>Documentation on how this is done can be found here (Closed Wiki):<br/>https://kartverket.atlassian.net/wiki/spaces/SKIPDOK/pages/422346824/Autentisering+mot+GCP+som+Kubernetes+SA<br/>
+          Configuration for authenticating a Pod with Google Cloud Platform<br/>For authentication with GCP, to use services like Secret Manager and/or Pub/Sub we need<br/>to set the GCP Service Account Pods should identify as. To allow this, we need the IAM role iam.workloadIdentityUser set ospn a GCP<br/>service account and bind this to the Pod&#39;s Kubernetes SA.<br/>Documentation on how this is done can be found here (Closed Wiki):<br/>https://kartverket.atlassian.net/wiki/spaces/SKIPDOK/pages/422346824/Autentisering+mot+GCP+som+Kubernetes+SA<br/>
         </td>
         <td>false</td>
       </tr>
@@ -2270,7 +2270,7 @@ GCP is used to configure Google Cloud Platform specific settings for the applica
 
 Configuration for authenticating a Pod with Google Cloud Platform
 For authentication with GCP, to use services like Secret Manager and/or Pub/Sub we need
-to set the GCP Service Account Pods should identify as. To allow this, we need the IAM role iam.workloadIdentityUser set on a GCP
+to set the GCP Service Account Pods should identify as. To allow this, we need the IAM role iam.workloadIdentityUser set ospn a GCP
 service account and bind this to the Pod's Kubernetes SA.
 Documentation on how this is done can be found here (Closed Wiki):
 https://kartverket.atlassian.net/wiki/spaces/SKIPDOK/pages/422346824/Autentisering+mot+GCP+som+Kubernetes+SA
@@ -5949,7 +5949,7 @@ Configuration for interacting with Google Cloud Platform
         <td><b><a href="#skipjobspeccontainergcpauth">auth</a></b></td>
         <td>object</td>
         <td>
-          Configuration for authenticating a Pod with Google Cloud Platform<br/>For authentication with GCP, to use services like Secret Manager and/or Pub/Sub we need<br/>to set the GCP Service Account Pods should identify as. To allow this, we need the IAM role iam.workloadIdentityUser set on a GCP<br/>service account and bind this to the Pod&#39;s Kubernetes SA.<br/>Documentation on how this is done can be found here (Closed Wiki):<br/>https://kartverket.atlassian.net/wiki/spaces/SKIPDOK/pages/422346824/Autentisering+mot+GCP+som+Kubernetes+SA<br/>
+          Configuration for authenticating a Pod with Google Cloud Platform<br/>For authentication with GCP, to use services like Secret Manager and/or Pub/Sub we need<br/>to set the GCP Service Account Pods should identify as. To allow this, we need the IAM role iam.workloadIdentityUser set ospn a GCP<br/>service account and bind this to the Pod&#39;s Kubernetes SA.<br/>Documentation on how this is done can be found here (Closed Wiki):<br/>https://kartverket.atlassian.net/wiki/spaces/SKIPDOK/pages/422346824/Autentisering+mot+GCP+som+Kubernetes+SA<br/>
         </td>
         <td>false</td>
       </tr>
@@ -5970,7 +5970,7 @@ Configuration for interacting with Google Cloud Platform
 
 Configuration for authenticating a Pod with Google Cloud Platform
 For authentication with GCP, to use services like Secret Manager and/or Pub/Sub we need
-to set the GCP Service Account Pods should identify as. To allow this, we need the IAM role iam.workloadIdentityUser set on a GCP
+to set the GCP Service Account Pods should identify as. To allow this, we need the IAM role iam.workloadIdentityUser set ospn a GCP
 service account and bind this to the Pod's Kubernetes SA.
 Documentation on how this is done can be found here (Closed Wiki):
 https://kartverket.atlassian.net/wiki/spaces/SKIPDOK/pages/422346824/Autentisering+mot+GCP+som+Kubernetes+SA
@@ -8155,7 +8155,7 @@ Configuration for interacting with Google Cloud Platform
         <td><b><a href="#skipjobspecgcpauth">auth</a></b></td>
         <td>object</td>
         <td>
-          Configuration for authenticating a Pod with Google Cloud Platform<br/>For authentication with GCP, to use services like Secret Manager and/or Pub/Sub we need<br/>to set the GCP Service Account Pods should identify as. To allow this, we need the IAM role iam.workloadIdentityUser set on a GCP<br/>service account and bind this to the Pod&#39;s Kubernetes SA.<br/>Documentation on how this is done can be found here (Closed Wiki):<br/>https://kartverket.atlassian.net/wiki/spaces/SKIPDOK/pages/422346824/Autentisering+mot+GCP+som+Kubernetes+SA<br/>
+          Configuration for authenticating a Pod with Google Cloud Platform<br/>For authentication with GCP, to use services like Secret Manager and/or Pub/Sub we need<br/>to set the GCP Service Account Pods should identify as. To allow this, we need the IAM role iam.workloadIdentityUser set ospn a GCP<br/>service account and bind this to the Pod&#39;s Kubernetes SA.<br/>Documentation on how this is done can be found here (Closed Wiki):<br/>https://kartverket.atlassian.net/wiki/spaces/SKIPDOK/pages/422346824/Autentisering+mot+GCP+som+Kubernetes+SA<br/>
         </td>
         <td>false</td>
       </tr>
@@ -8176,7 +8176,7 @@ Configuration for interacting with Google Cloud Platform
 
 Configuration for authenticating a Pod with Google Cloud Platform
 For authentication with GCP, to use services like Secret Manager and/or Pub/Sub we need
-to set the GCP Service Account Pods should identify as. To allow this, we need the IAM role iam.workloadIdentityUser set on a GCP
+to set the GCP Service Account Pods should identify as. To allow this, we need the IAM role iam.workloadIdentityUser set ospn a GCP
 service account and bind this to the Pod's Kubernetes SA.
 Documentation on how this is done can be found here (Closed Wiki):
 https://kartverket.atlassian.net/wiki/spaces/SKIPDOK/pages/422346824/Autentisering+mot+GCP+som+Kubernetes+SA
